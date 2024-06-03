@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(237, 231, 249);
+}
+
+.monitor {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    background: #033633;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.monitor::before {
+    content: '';
+    position: absolute;
+    width: 700px;
+    height: 35px;
+    background: #037068;
+}
+
+.screen {
+    position: absolute;
+    width: 500px;
+    height: 290px;
+    background: #8dbab7;
+    top: 70px;
+    transform: translateX(20%);
+    border-radius: 50% 20% / 10% 40%;
+    border: 8px solid;
+}
+
+.screen-shadow {
+    position: absolute;
+    width: 473px;
+    height: 150px;
+    background: #686e6e;
+    top: 202px;
+    left: 25px;
+    transform: translateX(20%);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 20% 40%;
+    border-bottom-right-radius: 20% 15%;
+    border: none;
+}
+
+.screen::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    top: 20px;
+    right: 500px;
+    background: #9c9e9e;
+}
+
+.soundboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+.panel {
+    position: absolute;
+    width: 810px;
+    height: 350px;
+    border-bottom: 200px solid #0a6660;
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+}
+
+.front-board {
+    position: absolute;
+    width: 810px;
+    height: 150px;
+    background: #033633;
+    margin-top: 500px;
+}
+
+button {
+    position: relative;
+    width: 120px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    /* To be changed to something funky */
+    cursor: pointer;
+    z-index: 1;
+    top: 70px
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 40px;
+}
+
+#applause {
+    background-color: rgb(255, 179, 186);
+}
+
+#boo {
+    background-color: rgb(186, 225, 255);
+}
+
+#victory {
+    background-color: rgb(255, 255, 186);
+}
+
+#nope {
+    background-color: rgb(186, 255, 201);
+}
+
+#gasp {
+    background-color: rgb(255, 223, 186);
+}
+
+#yup {
+    background-color: rgb(241,203,255)
+}
+
+.rectangle {
+    width: 120px;
+    height: 30px;
+}
+
+.oval {
+    width: 120px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#rect-applause {
+    position: absolute;
+    background-color: rgb(228, 126, 136);
+    top: 586px;
+}
+
+#oval-applause {
+    position: absolute;
+    background-color: rgb(228, 126, 136);
+    top: 588px;
+}
+
+#rect-boo {
+    position: absolute;
+    background-color: rgb(121, 182, 228);
+    top: 586px;
+    left: 427px;
+}
+
+#oval-boo {
+    position: absolute;
+    background-color: rgb(121, 182, 228);
+    top: 588px;
+    left: 427px;
+}
+
+#rect-victory {
+    position: absolute;
+    background-color: rgb(246, 246, 131);
+    top: 586px;
+    left: 587px;
+}
+
+#oval-victory {
+    position: absolute;
+    background-color: rgb(246, 246, 131);
+    top: 588px;
+    left: 587px;
+}
+
+#rect-nope {
+    position: absolute;
+    background-color: rgb(131, 194, 145);
+    top: 676px;
+}
+
+#oval-nope {
+    position: absolute;
+    background-color: rgb(131, 194, 145);
+    top: 678px;;
+}
+
+#rect-gasp {
+    position: absolute;
+    background-color: rgb(248, 189, 121);
+    top: 676px;
+    left: 427px;
+}
+
+#oval-gasp {
+    position: absolute;
+    background-color: rgb(248, 189, 121);
+    top: 678px;
+    left: 427px;
+}
+
+#rect-yup {
+    position: absolute;
+    background-color: rgb(227, 173, 247);
+    top: 676px;
+    left: 587px;
+}
+
+#oval-yup {
+    position: absolute;
+    background-color: rgb(227, 173, 247);
+    top: 678px;
+    left: 587px;
+}

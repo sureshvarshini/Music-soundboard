@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Funky Soundboard Control Panel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script src="js/script.js"></script>
+    <div class="name">
+        <h1>Funky Soundboard</h1>
+    </div>
+
+    <div class="monitor">
+        <div class="screen"></div>
+        <div class="screen-shadow"></div>
+
+    </div>
+    <div class="soundboard">
+        <div class="panel"></div>
+        <div class="front-board"></div>
+
+        <div class="button-grid">
+            <button id="applause" onclick="play_sound(this.id)">👏</button>
+            <div class="rectangle" id="rect-applause"></div>
+            <div class="oval" id="oval-applause"></div>
+
+            <button id="boo" onclick="play_sound(this.id)">👻</button>
+            <div class="rectangle" id="rect-boo"></div>
+            <div class="oval" id="oval-boo"></div>
+
+            <button id="victory" onclick="play_sound(this.id)">🏆</button>
+            <div class="rectangle" id="rect-victory"></div>
+            <div class="oval" id="oval-victory"></div>
+
+            <button id="nope" onclick="play_sound(this.id)">🙅‍♀️</button>
+            <div class="rectangle" id="rect-nope"></div>
+            <div class="oval" id="oval-nope"></div>
+
+            <button id="gasp" onclick="play_sound(this.id)">🫢</button>
+            <div class="rectangle" id="rect-gasp"></div>
+            <div class="oval" id="oval-gasp"></div>
+
+            <button id="yup" onclick="play_sound(this.id)">🫡</button>
+            <div class="rectangle" id="rect-yup"></div>
+            <div class="oval" id="oval-yup"></div>
+        </div>
+    </div>
+</body>
+
+</html>
